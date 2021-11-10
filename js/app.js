@@ -13,3 +13,17 @@ const navBtnDOM = getElement('.nav-btn')
 navBtnDOM.addEventListener('click', () => {
     links.classList.toggle('show-links')
 })
+
+//SCROLL REVEAL ANIMATION
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 2000,
+    reset: true
+});
+
+sr.reveal(`.home-data, .about-data,
+         .recipe-content, .contact-data, .contact-button,
+         .footer-content`, {
+         interval: 200
+})

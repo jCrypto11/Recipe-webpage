@@ -10,6 +10,8 @@
     <title>Odin Recipe</title>
 </head>
 <body>
+<!--CHANGED-->
+<div class="main-container">
 <!--NAVIGATION BAR-->
     <nav class="navbar">
         <div class="nav-center">
@@ -27,7 +29,7 @@
                 <a href="index.html" class="nav-link">home</a>
                 <a href="recipes.html" class="nav-link">recipes</a>
                 <a href="about.html" class="nav-link">about</a>
-
+                <a href="contact.html" class="nav-link">Services</a>
                 <div class="nav-link contact-link">
                     <a href="contact.html class" class="contact-btn">contact</a>
                 </div>
@@ -40,15 +42,126 @@
          <div class="home-container bd-container bd-grid">
              <div class="home-data">
                 <h1 class="home-title">Filipino Recipes</h1>
-                <h2 class="home-subtitle">Learn and cook authentic <br> Filipino Cuisine.</h2>
+                <h2 class="home-subtitle">Cook authentic <br> Filipino Cuisine.</h2>
                 <a href="recipes.html" class="recipe-btn">View Recipes</a>
              </div>
+             <!--CHANGED-->
              <img src="Images/Filipino_Cuisine.jpg" alt="Filipino Cuisine" class="home-img">
          </div>
      </section>
     </main>
+    <!--ABOUT PAGE-->
+    <section class="about-sec bd-container" id="about-pg">
+        <div class="about-container bd-grid">
+        <div class="about-data">
+            <span class="section-subtitle about-initial">About us</span>
+            <h2 class="section-title about-initial">Learn and cook <br> Filipino food</h2>
+            <p class="about-description">This page will teach you how to cook authentic Filipino Cuisine. Click below to learn more.</p>
+            <a href="about.html" class="about-btn">Learn more</a>
+        </div>
+        <img src="Images/Embutido.jpg" alt="Embutido" class="about-img">
+        </div>
+    </section>
+    <!--RECIPE PAGE-->
+    <section class="recipe-section bd-container" id="recipe">
+        <span class="section-subtitle">Recipes</span>
+        <h2 class="section-title">Recipes of the week</h2>
+
+        <div class="recipe-container bd-grid">
+            <div class="recipe-content">
+                <a href="#" class="dishes-btn">
+                <img src="Images/chicken-adobo.jpg" alt="Adobo Dish" class="recipe-img">
+                </a>
+                <div class="recipe-description">
+                <h3 class="recipe-name">Adobo</h3>
+                <span class="recipe-detail">Delicious Dish</span>
+                </div>
+            </div>
+
+            <div class="recipe-content">
+                <a href="#" class="dishes-btn">
+                <img src="Images/Filipino_BBQ.jpg" alt="Filipino BBQ Dish" class="recipe-img">
+                </a>
+                <div class="recipe-description">
+                <h3 class="recipe-name">Pork BBQ</h3>
+                <span class="recipe-detail">Delicious Dish</span>
+                </div>
+            </div>
+
+            <div class="recipe-content">
+                <a href="#" class="dishes-btn">
+                <img src="Images/Sinigang.jpg" alt="Sinigang Dish" class="recipe-img">
+                </a>
+                <div class="recipe-description">
+                <h3 class="recipe-name">Sinigang</h3>
+                <span class="recipe-detail">Delicious Dish</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CONTACT PAGE-->
+    <section class="contact section bd-container" id="contact">
+        <div class="contact-container bd-container bd-grid">
+            <div class="contact-data">
+                <span class="section-subtitle contact-initial">Let's talk</span>
+                <h2 class="section-title contact-initial">Contact us</h2>
+                <p class="contact-description">For more information Contact us, with our 24/7 chat service.</p>
+            </div>
+
+            <div class="contact-button">
+                <a href="contact.html" class="button">Contact us now</a>
+            </div>
+        </div>
+    </section>
     <!--FOOTER-->
+    <footer class="footer-section bd-container">
+        <div class="footer-container bd-grid">
+            <div class="footer-content">
+                <a href="index.html" class="footer-logo">Filipino Recipes</a>
+                <span class="footer-description">Learn, Cook, Eat</span>
+
+                <div>
+                    <a href="#" class="footer-social"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="footer-social"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer-social"><i class="fab fa-youtube"></i></i></a>
+                </div>
+            </div>
+
+            <div class="footer-content">
+                <h3 class="footer-title">Services</h3>
+                <ul>
+                    <li><a href="#" class="footer-link">Merchandise</a></li>
+                    <li><a href="#" class="footer-link">Pricing</a></li>
+                    <li><a href="#" class="footer-link">Ingredient Delivery</a></li>
+                    <li><a href="#" class="footer-link">Reserve your spot</a></li>
+                </ul>
+            </div>
+            
+        <div class="footer-content">
+            <h3 class="footer-title">Information</h3>
+            <ul>
+                <li><a href="#" class="footer-link">Cooking Event</a></li>
+                <li><a href="contact.html" class="footer-link">Contact us</a></li>
+                <li><a href="#" class="footer-link">Privacy policy</a></li>
+                <li><a href="#" class="footer-link">Terms of services</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-content">
+            <h3 class="footer-title">Address</h3>
+            <ul>
+                <li class="ad-link">London ON - Canada</li>
+                <li class="ad-link">Jr. Web developer</li>
+                <li class="ad-link">519-851-9999</li>
+                <li class="ad-link">jcarpio28@yahoo.ca</li>
+            </ul>
+        </div>
+        </div>
+        <p class="footer-copy">&#169; 2021 Joshua Shem Carpio. All rights reserved</p>
+    </footer>
     <!--JAVASCRIPT-->
+</div>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
