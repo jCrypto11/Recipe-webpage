@@ -320,13 +320,12 @@ html{
   justify-content: center;
   align-items: center;
   background: var(--primary-color-red);
-  
+  border-radius: 10%;
 }
 
 .nav-center{
   width: 90vw;
   max-width: 1120px;
-  /* background: var(--primary-color-red); */
 }
 
 .nav-header{
@@ -780,5 +779,120 @@ html{
   .about-img{
     width: 500px;
     order: -1;
+  }
+}
+
+/************************************************************
+RECIPES-MAIN-PAGE***/
+
+.rec-container{
+  display: grid;
+  gap: 2rem 1rem;
+  margin-top: 2rem;
+  /* border: 2px solid red; */
+}
+
+.tags-container{
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+
+.recipes-list{
+  display: grid;
+  gap: 2rem 1rem;
+  padding-bottom: 3rem;
+}
+
+.tags-container h4{
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-family: var(--anton);
+  color: var(--primary-color-red);
+}
+
+.tags-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tags-list a{
+  text-transform: capitalize;
+  display: block;
+  color: var(--grey-600);
+  font-family:var(--anton);
+  transition: var(--transition);
+}
+
+.tags-list a:hover{
+  transform: scale(1.1);
+}
+
+ .recipe{
+  display: block;
+  overflow: hidden;
+  width:100%;
+  border-radius: 2rem;
+}
+
+ .food-img{
+  border-radius: 2rem;
+  transition: var(--transition);
+  
+  width: 100%;
+} 
+
+.food-img:hover{
+  transform: scale(1.1);
+}
+
+.recipe h5{
+  line-height: 1;
+  color: var(--grey-600);
+  font-family: var(--anton);
+}
+
+
+ h5{
+  margin-top: 2rem;
+  font-family: var(--anton);
+  color: var(--primary-color-red);
+}
+
+
+.recipe-class{
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+@media screen and (min-width: 576px){
+  .recipe-list{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    gap: 2rem;
+  }
+  .food-img{
+    height: 15rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .rec-container{
+    grid-template-columns: 200px 1fr;
+  }
+
+  .recipe-class{
+    font-size: 0.85
+  }
+
+  .tags-container{
+    order: 0;
+  }
+
+  .tags-list{
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }

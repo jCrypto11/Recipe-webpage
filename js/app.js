@@ -24,6 +24,6 @@ const sr = ScrollReveal({
 
 sr.reveal(`.home-data, .about-data,
          .recipe-content, .contact-data, .contact-button,
-         .footer-content`, {
+         .footer-content, .tags-container, .recipe-list`, {
          interval: 200
 })
