@@ -150,7 +150,7 @@ html{
   .btn {
     cursor: pointer;
     color: var(--white);
-    background: var(--primary-500);
+    background: var(--primary-color-red);
     border: transparent;
     border-radius: var(--borderRadius);
     letter-spacing: var(--letterSpacing);
@@ -159,11 +159,14 @@ html{
     transition: var(--transtion);
     text-transform: capitalize;
     display: inline-block;
+    font-weight: bold;
   }
   .btn:hover {
+    color: var(--primary-color-red);
     background: var(--white);
     box-shadow: var(--shadow-3);
     transition: var(--transition);
+    font-weight: bold;
   }
   .btn-hipster {
     color: var(--primary-500);
@@ -853,13 +856,11 @@ RECIPES-MAIN-PAGE***/
   font-family: var(--anton);
 }
 
-
  h5{
   margin-top: 2rem;
   font-family: var(--anton);
   color: var(--primary-color-red);
 }
-
 
 .recipe-class{
   display: grid;
@@ -884,7 +885,7 @@ RECIPES-MAIN-PAGE***/
   }
 
   .recipe-class{
-    font-size: 0.85
+    font-size: 0.85;
   }
 
   .tags-container{
@@ -894,5 +895,80 @@ RECIPES-MAIN-PAGE***/
   .tags-list{
     display: grid;
     grid-template-columns: 1fr;
+  }
+}
+
+/********MAIN-ABOUT-PAGE***********/
+
+.about-page h2{
+  text-transform: none;
+  font-weight: bold;
+  font-family: var(--anton);
+  color: var(--primary-color-red);
+  padding-top: 2rem;
+}
+
+.about-page p{
+  font-family: var(--anton);
+  color: var(--grey-700);
+}
+
+.about-page{
+  display: grid;
+  gap: 2rem 4rem;
+  padding-bottom: 3rem;
+}
+
+.abt-img{
+  border-radius: 0.25rem;
+  height: 300px;
+}
+
+.featured-title{
+  text-align: center;
+}
+
+@media screen and (min-width:992px){
+  .about-page{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .abt-img{
+    height: 100%;
+  }
+}
+
+/*******MAIN-CONTACT-PAGE*******/
+.contact-form{
+  width: 100%;
+  margin: 0;
+}
+
+.contact-info h3{
+  padding-top: 2rem;
+  font-weight: bold;
+  font-family: var(--anton);
+  color: var(--primary-color-red);
+}
+
+.contact-info p{
+  font-family: var(--anton);
+  color: var(--grey-700);
+}
+
+.cont-container{
+  display: grid;
+  gap: 2rem 3rem;
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width:992px){
+  .cont-container{
+    grid-template-columns: 1fr 450px;
+    align-items: center;
+    padding-top: 2rem;
   }
 }
