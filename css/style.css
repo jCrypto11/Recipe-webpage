@@ -788,6 +788,10 @@ html{
 /************************************************************
 RECIPES-MAIN-PAGE***/
 
+.icon{
+  width: 40%;
+}
+
 .rec-container{
   display: grid;
   gap: 2rem 1rem;
@@ -865,6 +869,8 @@ RECIPES-MAIN-PAGE***/
 .recipe-class{
   display: grid;
   grid-template-columns: 1fr 6fr;
+  font-weight: bold;
+  color: var(--grey-700)
 }
 
 @media screen and (min-width: 576px){
@@ -972,3 +978,110 @@ RECIPES-MAIN-PAGE***/
     padding-top: 2rem;
   }
 }
+
+/***************SINGLE-RECIPE-PAGE******************/
+.recipe-hero{
+  display: grid;
+  gap: 3rem;
+  padding-top: 2rem;
+}
+
+.recipe-hero-img{
+  height: 450px;
+  border-radius: 1rem;
+}
+
+.recipe-info h2{
+  color: var(--primary-color-red);
+  font-family: var(--anton);
+}
+
+.recipe-hero p{
+  color: var(--grey-700);
+  font-weight: bold;
+}
+
+.recipe-icons{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.recipe-icons i{
+  font-size: 1.5rem;
+}
+
+.recipe-icons p{
+  margin-bottom: 0;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+@media screen and (min-width:992px){
+  .recipe-hero{
+    grid-template-columns: 4fr 5fr;
+    align-items: center;
+  }
+}
+
+.rep-content h4{
+  font-family: var(--anton);
+}
+
+.rep-content{
+  padding: 3rem 0;
+  display: grid;
+  gap: 2rem;
+}
+
+@media screen and (min-width:992px){
+  .rep-content{
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.single-instruction header{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.single-instruction header p{
+  text-transform: uppercase;
+  font-family: var(--anton);
+  color: var(--primary-color-red);
+  margin-bottom: 0;
+}
+
+.single-instruction p{
+  font-weight: bold;
+  color: var(--grey-800);
+}
+
+.single-instruction header div{
+  height: 2px;
+  background: var(--grey-300);
+}
+
+.single-ingredient{
+  font-weight: bold;
+}
+
+.single-tool{
+  font-weight: bold;
+  color: var(--primary-color-red);
+}
+
+.second-column{
+  display: grid;
+  row-gap: 2rem;
+}
+
+.single-ingredient{
+  border-bottom: 2px solid var(--grey-300);
+}
+
+
